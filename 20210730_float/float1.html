@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.box{
+            width: 600px;
+            background: chocolate;
+        }
+        div.box1{
+            width: 200px;height: 40px;
+            background: cornsilk;
+            float:left;
+        }
+        div.box2{
+            width: 200px;height: 40px;
+            background: lightcoral;
+            float: right;
+        }
+        div.box::after{
+            content:"";
+            clear:both; display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="box1">left</div>
+        <div class="box2">right</div>
+    </div>
+    
+</body>
+</html>
