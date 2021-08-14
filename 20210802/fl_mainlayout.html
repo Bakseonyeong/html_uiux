@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,48 +12,46 @@
 
     <style>
         /* reset */
-        *{margin:0;padding:0;}
+        *{margin: 0;padding: 0;}
         li{list-style: none;}
-        a:link,a:visited{text-decoration: none;color:black;}
-        .clearfix::after{content:"";clear:both;display: block;}
+        a:link,a:visited{text-decoration: none;color:black}
+        .clearfix:after{content:"";clear: both;display: block;}
 
-        /* header */
+        /* header  */
         header.header{
             width: 1000px;margin: 0 auto;
         }
         header.header>h1{text-align: center;}
-        nav.nav>ul>li{float: left;width: 20%;background-color: skyblue;}
-        nav.nav>ul>li>a{display: block; line-height: 40px; text-align: center;}
-        nav.nav>ul>li>a:hover{background-color: #00f;color:white;}
+        nav.nav>ul>li{float: left;width: 20%;background-color:skyblue;}
+        nav.nav>ul>li>a{display: block;line-height: 40px;text-align: center;}
+        nav.nav>ul>li>a:hover{background-color: #00f;color:white}
 
-        /* visual */
-        .visual{width: 1000px; margin: 0 auto;}
+        /* visual  */
+        .visual{width: 1000px;margin: 0 auto;}
 
-        /* container */
+        /* container  */
         .container{width: 1000px;margin: 0 auto; background-color: orange;text-align: center;}
-        .container>.aside{float: left; width: 300px;background-color: #f00;line-height: 500px;}
-        .container>.section{float: right;width: 680px;background-color: #0f0;line-height: 500px;}
+        .container>.aside{float: left;width: 300px;background-color: #f00;line-height: 500px;}
+        .container>.section{float: right;width: 680px;background-color: #0f0;line-height:500px}
 
-        /* footer */
-        footer.footer{0
+        /* footer  */
+        footer.footer{
             width: 1000px;margin: 0 auto;
             background-color: #ccc;
             text-align: center;
             line-height: 100px;
         }
-
     </style>
     <script>
         $(document).ready(function(){
-          $('.slider').bxSlider();
+            $('.slider').bxSlider();
         });
+
     </script>
 </head>
 <body>
     <header class="header">
-        <h1>
-            <a href="#">logo</a>
-        </h1>
+        <h1><a href="#">logo</a></h1>
         <nav class="nav">
             <ul class="clearfix">
                 <li><a href="#">menu1</a></li>
@@ -66,11 +65,12 @@
 
     <div class="visual">
         <ul class="slider">
-            <li><img src="../images/pc01.jpg" alt="pc01"></li>
-            <li><img src="../images/pc02.jpg" alt="pc02"></li>
-            <li><img src="../images/pc03.jpg" alt="pc03"></li>
+            <li><img src="../images/pc01.jpg" alt=""></li>
+            <li><img src="../images/pc02.jpg" alt=""></li>
+            <li><img src="../images/pc03.jpg" alt=""></li>
         </ul>
     </div>
+
     <div class="container clearfix">
         <aside class="aside">aside</aside>
         <section class="section">section</section>
