@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    h1{font-size: 43px; text-align: center; width: 1000px;margin: 0 auto; padding: 10px;}
+
+    .box{border: 4px solid #000;  width: 1000px;}
+    table{border-collapse: collapse; width: 1000px;text-align: center;}
+
+    th,td{border: 1px solid #000;}
+    .user tr{height: 50px;}
+
+    .wh{}
+    .gr{background: #ddd;}
+
+    .user tr th:nth-child(1){width: 75px;}
+    .user tr th:nth-child(2){width: 150px;}
+    .user tr td:nth-child(3){width: 220px;}
+    .user tr th:nth-child(3){width: 150px;}
+    .user tr td:nth-child(5){width: 230px;}
+
+
+    .school{height: 50px;}
+
+
+    .school tr.sc1 th{width: 160px;}
+
+
+    .bot{height: 100px;}
+    .bot tr td,.bot tr th{border-top: 1px solid #ddd;}
+    .bot tr th:nth-child(1){width: 75px;}
+    .bot tr td:nth-child(2){width: 200px;}
+
+
+    .mb5{ margin-bottom: 6px;}
+    .pd1{padding: 1px;}
+
+</style>
+
+
+<body>
+    <h1>입학지원서(일반고)</h1>
+
+    <div class="box">
+        <table class="user mb5">
+            <tr>
+                <th class="wh" rowspan="4">*<br>인적<br>사항</th>
+                <th class="gr">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
+                <td>이름쓰</td>
+                <th class="gr">학&nbsp;&nbsp;교&nbsp;&nbsp;명</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;고등학교</td>
+                <td rowspan="4">사진첨부</td>
+            </tr>
+        
+            <tr>
+                <th class="gr">주민등록번호</th>
+                <td>빈칸빈칸빈칸</td>
+                <th class="gr">e - mail</th>
+                <td>빈칸빈칸빈칸</td>
+            </tr>
+        
+            <tr>
+                <th class="gr">휴 대 폰(C.P)</th>
+                <td>빈칸빈칸빈칸</td>
+                <th class="gr">긴급연락처
+                    <br>(학부모)</th>
+                <td>빈칸빈칸빈칸</td>
+            </tr>
+        
+            <tr>
+                <th class="gr">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</th>
+                <td colspan="3">빈칸빈칸빈칸</td>
+            </tr>
+        </table>
+
+        <table class="school">
+            <tr class="sc1">
+                <th class="gr">*추천교사명</th>
+                <td>빈칸빈칸빈칸</td>
+                <th class="gr">연락처</th>
+                <td>빈칸빈칸빈칸</td>
+                <th class="gr">학교연락처</th>
+                <td>빈칸빈칸빈칸</td>
+            </tr>
+
+        </table>
+
+        <table class="bot">
+            <tr class="sc2">
+                <th class="gr">*인지<br>경로</th>
+                <td>본교를 알게된 경로는<br>(중복응답가능)</td>
+                <td>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+    
+</body>
+</html>
