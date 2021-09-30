@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // $("p").hide()
+            // $("p.p#p").eq(0).hide().show();
+            // eq = 순서가져오기 -> eq(n/0) n+1번째/1번째
+            $("p").eq(0).css("background-color","#ffa");
+            let pBg = $("p").eq(0).css("background-color")
+            console.log(pBg);
+            console.log($("p").length);
+
+            $("btn").on("click",function(){
+                $("p").eq(1).css({
+                    "background":"skyblue",
+                    "border":"1px solid #333",
+                    "position":"relative",
+                    "left":"100px"
+                })
+
+            });
+
+            $(".btn1").click(function(){
+                $("p").eq(1).css({
+                    "background":"white",
+                    "border":"initial",
+                    "position":"initial",
+                    
+                })
+                // $("p").eq(1).attr("style","")
+            });
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <button class="btn">변경</button>
+    <button class="btn1">원래대로</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate architecto perferendis est voluptatem odit fuga autem, assumenda dolorum, omnis deserunt in! Molestias sint excepturi impedit ducimus alias possimus fugiat soluta!</p>
+    <p>Totam, obcaecati magni vel tempore assumenda quasi distinctio ea dolorum ab sed ipsa nam. Minima, magnam! Minima perspiciatis eum aliquam sequi, aut fuga iusto voluptates ducimus, et neque, accusamus distinctio!</p>
+    <p>Possimus illum voluptatibus, ad, fugiat est neque nemo distinctio nihil, commodi ex soluta officia. Quos adipisci voluptas tempore, voluptatum libero, qui deserunt pariatur vel perspiciatis consectetur voluptatibus doloremque. Laudantium, dolores.</p>
+    <p>Provident quisquam laborum eum, iure quis quo perspiciatis necessitatibus enim, tempore harum nemo quia facilis dolorem dolore fugit sapiente commodi placeat odio dolorum inventore? Dolore illum quaerat repudiandae veniam animi.</p>
+
+    <!-- <script>
+        for(let i=0;i<4;i++){
+            document.getElementsByTagName("p")[0].style.display = "none";
+        }
+
+    </script> -->
+    
+</body>
+</html>
